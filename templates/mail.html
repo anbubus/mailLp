@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../static/style.css">
+    <title>MailECA</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MailECA</h1>
+            <p>Login</p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <form method="POST">
+                <p>Data: <input type="date"></p>
+                <p>Destinatário: <input name="destinatario" type="email" placeholder="destinaratio@gmail.com"></p>
+                <textarea name="text" id="text" placeholder="Escreva aqui..."></textarea>
+                <p>Remetente  {{ user_name }}: <input name="remetente" type="email" placeholder="remetente@gmail.com"></p>
+                <input class = "_bt" value = "Enviar" type="submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
