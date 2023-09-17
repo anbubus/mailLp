@@ -50,7 +50,7 @@ def mail(user_name):
     page=document.pages.add()
     text_fragment = ap.text.TextFragment(mail)
     page.paragraphs.add(text_fragment)
-    document.save(user_name + "mail.pdf")
+    document.save(user_name + date + "mail.pdf")
 
     return render_template("mail.html", user_name = user_name)
 
