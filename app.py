@@ -28,7 +28,7 @@ def login():
             return redirect("/")
             
             
-        f.close()
+    f.close()
 
         
 @app.route("/mail/<user_name>")
